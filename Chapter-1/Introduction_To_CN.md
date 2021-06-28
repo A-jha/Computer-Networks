@@ -124,3 +124,62 @@ Rules of protocol gover all methods of communication.
   - What is communicated?
   - How it is communicated?
   - When it is communicated?
+
+### Need of Protocol in Network Communication
+
+Protocols used in network communication also define :
+
+- Message encoding
+- Message formatting and encapsulation
+- Message Timing
+- Message Size
+- Message Delivery option
+
+These are called elements of protocol.
+
+### 1. Message Encoding
+
+![encoing](../assets/encoding.svg)
+
+### 2. Meesage Formatting and Encasulation
+
+A format on which Sender and Receiver both are aggred.
+
+Encapsulate the information to identify the sender and receiver intigrity.
+
+### 3. Message Size
+
+Human break long message into smaller parts or sentences.
+
+Long message must be broken into smaller part to travel across network.
+
+### 4. Meesage Timing
+
+Message timing deals with **flow control** and **response timeout**.
+
+- flow control : if sender is very fast and receiver is slow than network should mennage the flow of messages .(if flow control is not available then chances of data loss is very high)
+- response timeout - an approximate time to get response from sender message or reciever massage.
+
+### 5. Message Delivery Option
+
+- Unicast : One sender and One receiver
+- MultiCast : one sender to set of receiver
+- Broadcast : one sender to all receiver
+
+## Peer to Peer Network
+
+- No cetralized administration
+- All peers are equal
+- Simple sharing application
+- Not Scalable
+
+## Cleint Server Nework
+
+- Centralized administration
+- Request-response model
+- Scalable
+- Server may be overloaded
+
+![cntralized](../assets/cntralized.svg)
+
+# Various Components of Computer network
