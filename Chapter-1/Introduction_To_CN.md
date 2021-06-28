@@ -183,3 +183,117 @@ Message timing deals with **flow control** and **response timeout**.
 ![cntralized](../assets/cntralized.svg)
 
 # Various Components of Computer network
+
+1. Nodes
+2. Media
+3. Services
+
+## 1. Nodes
+
+A nodes caqn send or receive data.
+
+- End Nodes (end devices)
+- Intermediary nodes.
+
+### End Nodes
+
+Staring or end point of the communications.
+
+- Computer
+- Network printers
+- Volp Phones
+- Telepresence Endpoint(for video conferencing)
+- Security camera
+
+Mobile handheld devices (smart phones, tblets, PDAs, wireless debit/credit card reader, barcode scanner)
+
+### Intermidiary Node
+
+Node that just forwards the data from one node to another node.
+
+- Switches
+- Wireless access points
+- Routers
+- Security Devices (firewall)
+- Bridges
+- Hubs
+- Repeaters
+- Cell Tower
+
+## 2. Media
+
+Medial is also K/A Link that carries data.
+This link can be :
+
+- Wired Medium (Guided Medium) : Cable is present to guide the data flow hence guided medium.
+
+  - Ethernet Straight through cable(connects different types of nodes)
+  - Ethernet Crossover cable (connects similar type of nodes)
+  - Fiber Optic Cable
+  - Coaxial Cable
+  - USB Cable
+
+- Wireless Medium (Unguided Medium) : absence of cable hence unguided medium.
+  - Infrared (short range communication - TV remote)
+  - Radio (Bluetooth, wifi)
+  - Microwaves ( Cellular systems)
+  - Satalite (Long range communication - GPS)
+
+## 3. Services
+
+- e-mail
+- Storage Service
+- File Sharing
+- Instant messaging
+- Online game
+- Voice over IP
+- Video Telephony
+- Wold Wide Web
+
+# Classification of Computer Networks
+
+1. Local Area Network
+2. Metropolitian Area Network
+3. Wide Area Network
+
+## 1. Local Area Network (LAN)
+
+A Local Area Network is a computer network thet interconnects computers within a **limited area** such as a residence, school, laboratory, university campus or office building.
+
+Lan-Devices
+
+- Wired LAN (Ethernet-Hub, switch)
+- Wireless LAN (Wi-Fi)
+
+## 2. Metropolitian Area Network
+
+A metroPolitian area network is a computer network that interconnects users with computer resources in a geographic region of size of a **metropolitian area / city**.
+
+- in other word two local area networks connected across city.
+
+Man Devices
+
+- Switches / Hub
+- Routers / Bridges
+
+![lan](../assets/lan.svg)
+
+## 3. Wide Area Network
+
+A WAN is a **telecommunications network**(any communication at distance) that extends over a **large geographical area** for the primary pupose of computer netwoking.
+
+WAN Devices
+
+- End devices and Intermidiary devices
+
+![wan](../assets/wan.svg)
+
+## Intenet
+
+- Internet is the combination of Multiple LAN / MAN / WAN.
+
+## Storage Area Network
+
+### Cloud Computing
+
+- It is the **on-demand availability** of computer syatem resources, especially data storage and computing power, without direct active management by the user.
