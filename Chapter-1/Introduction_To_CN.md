@@ -104,7 +104,7 @@ Three different flows are
 ### Full Duplex Dataflow or Duplex
 
 - Communication is both direction simultaniously.
-- Davice can send and receive data at sma time.
+- Davice can send and receive data at same time.
   Example:
   - Telephone Lines
 
@@ -116,7 +116,7 @@ All communication schemes will have the following things in common:
 - Destination or receiver
 - Channel or media
 
-Rules of protocol gover all methods of communication.
+Rules of protocol govern all methods of communication.
 
 - Protocol = Rule
 - It is a set of rules that govern data communication
@@ -141,7 +141,7 @@ These are called elements of protocol.
 
 ![encoing](../assets/encoding.svg)
 
-### 2. Meesage Formatting and Encasulation
+### 2. Meesage Formatting and Encapsulation
 
 A format on which Sender and Receiver both are aggred.
 
@@ -157,7 +157,7 @@ Long message must be broken into smaller part to travel across network.
 
 Message timing deals with **flow control** and **response timeout**.
 
-- flow control : if sender is very fast and receiver is slow than network should mennage the flow of messages .(if flow control is not available then chances of data loss is very high)
+- flow control : if sender is very fast and receiver is slow than network should mannage the flow of messages .(if flow control is not available then chances of data loss is very high)
 - response timeout - an approximate time to get response from sender message or reciever massage.
 
 ### 5. Message Delivery Option
@@ -190,7 +190,7 @@ Message timing deals with **flow control** and **response timeout**.
 
 ## 1. Nodes
 
-A nodes caqn send or receive data.
+A nodes can send or receive data.
 
 - End Nodes (end devices)
 - Intermediary nodes.
@@ -205,7 +205,7 @@ Staring or end point of the communications.
 - Telepresence Endpoint(for video conferencing)
 - Security camera
 
-Mobile handheld devices (smart phones, tblets, PDAs, wireless debit/credit card reader, barcode scanner)
+Mobile handheld devices (smart phones, tablets, PDAs, wireless debit/credit card reader, barcode scanner)
 
 ### Intermidiary Node
 
@@ -258,7 +258,7 @@ This link can be :
 
 ## 1. Local Area Network (LAN)
 
-A Local Area Network is a computer network thet interconnects computers within a **limited area** such as a residence, school, laboratory, university campus or office building.
+A Local Area Network is a computer network that interconnects computers within a **limited area** such as a residence, school, laboratory, university campus or office building.
 
 Lan-Devices
 
