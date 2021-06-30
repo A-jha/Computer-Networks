@@ -339,6 +339,10 @@ A signal containing the address of the intended receiving machine travel from a 
 - Unidirectional
 - Sending and receiving data takes palce with the help of **Tokens**.
 
+| No. of Nodes(N) | No. of Cables | No.of Port/Device | Total No of Ports |
+| --------------- | ------------- | ----------------- | ----------------- |
+| N               | N             | 2                 | 2 x N             |
+
 ![ring](../assets/ring.svg)
 
 | Advantages                             | Disadvantages                                                     |
@@ -353,10 +357,40 @@ A signal containing the address of the intended receiving machine travel from a 
 - Centralized management.
 - All trafic must pass through hub and switch.
 
-![star](../assets/star.svg)
+| No. of Nodes(N) | No. of Cables | No.of Port/Device | Total No of Ports |
+| --------------- | ------------- | ----------------- | ----------------- |
+| N               | N             | 1                 | 2 x N             |
+
+- all devices are connected to switch/hub which require N port too to connect them.
+  ![star](../assets/star.svg)
 
 | Advantages                   | Disadvantages                                |
 | ---------------------------- | -------------------------------------------- |
 | Easy to design and emplement | Single point of failure effect whole network |
 | Centralized administration   | Bottle neck due to overloaded switch/hub     |
 | Scalable                     | Increase cost due to switches and hub        |
+
+- Two or more star topology can be connected with the help of **repeater**.
+
+## 4. Mesh Topology
+
+- Each node is directly connected to every other nodes in the network.
+- Fault tolerant and reliable.
+- Trafic Problem can be minimized using mesh topology
+  ![mesh](../assets/mesh.svg)
+
+| Advantages     | Disadvantages                              |
+| -------------- | ------------------------------------------ |
+| Fault tolerant | issue with broadcasting message            |
+| Reliable       | Expensive and impratical for large network |
+
+## 5. Hybrid Topology
+
+- Cobination of All above topology.
+  ![hybrid](../assets/hybrid.svg)
+
+# Basics Of IP Address
+
+IP Stands for internet Protocol.
+
+Every node in the computer network is identified with the help of IP address.
