@@ -1,4 +1,4 @@
-# Waht is a Computer Network ?
+# What is a Computer Network ?
 
 A computer network is a set of nodes connected by communication links.
 
@@ -415,10 +415,10 @@ ip addr
 
 # Basics of MAC Address
 
-- MAC Stands for Media Access Control.
+- MAC Stands for **Media Access Control.**
 - Every node in the LAN is identified with the help of MAC Address.
-- IP Address = Location of the Person
-- MAC Address = Name of the Person
+- IP Address = Location of the Person(changes based on location)
+- MAC Address(Not changes) = Name of the Person
 - MAC address are physical address or Hardware address
 - MAC Address are unique
 - MAC address never changes
@@ -429,10 +429,104 @@ ip addr
 
 ## Difference between IP Address and MAC Address
 
-| IP Address                              | MAC Address                             |
-| --------------------------------------- | --------------------------------------- |
-| Needed for communication                | Needed for communication                |
-| 32 bits                                 | 48 bits                                 |
-| Represented in decimal                  | Represented in Hexa decimal             |
-| Routers need IP address to forward data | Switch need MAC address to forward data |
-| Example: 10.10.23.56                    | Example: 70-20-84-OO-ED-FC              |
+| IP Address                                 | MAC Address                                 |
+| ------------------------------------------ | ------------------------------------------- |
+| Needed for communication                   | Needed for communication                    |
+| 32 bits                                    | 48 bits                                     |
+| Represented in decimal                     | Represented in Hexa decimal                 |
+| Routers need IP address to forward data    | Switch need MAC address to forward data     |
+| Example: 10.10.23.56                       | Example: 70-20-84-OO-ED-FC                  |
+| IP Addresses are Router friendly addresses | MAC Addresses are Switch friendly Addresses |
+
+# Basics of PORT Addressing
+
+Let's say i ordered a Laptop
+
+- Parchel reached to my city is an example of **IP Address**
+- Parchel reached to My Hostel is an example of **MAC Address**
+- Parchel Reached to my room is an example of **Port Address**
+
+## Port Address or Port Number
+
+- In a node, many processes will be running.
+- Data which are sent and received must reach the right process.
+- Every process in a node is uniquely identified using **Port Number**
+- Port = Communication endpoint
+- Fixed port numbers and dynamic post numbers (0 - 65535)
+
+Example:
+
+Fixed port number like 25,80,3000(react),5000(django),5432(postgres)
+
+OS Assingned dynamic port numbers:50321, 62414, . .
+
+![port](../assets/ports.svg)
+
+## Three key points to ponder
+
+Before sending the data, any node must
+
+- Attach Source IP Address and Destination IP address.(Required Router)
+- Attach Sourcre MAC Address and Destnation MAC address.(Required for Switch)
+- Attach Source PORT number and destination Port Number.(requrire for operating system)
+
+# Switching
+
+Switching in Computer Network helps in deciding the best route for data transmission if there are multiple path in a large network.
+
+- One-To-One Connection
+
+## Switching Techniques
+
+1. Circuit Switching
+2. Message Switching
+3. Packet Switching
+   - Datagram Approach
+   - Virtual Circuit Approach.
+
+## 1. Circuit Switching
+
+- A dedicated Path is established between the sender and receiver.
+- Before data transfer, connections will be established first.
+- Example: Telephone Network
+
+### Three Phases in circuit Switching
+
+1. Coonection establishment
+2. Data Transfer
+3. Connection Disconnection
+
+## 2. Message Switching
+
+- Store and forward mechanism
+- Message is transferred as a complete unit and forwarded using store and forward mechanism at the intermidiary node.
+- Not suited streaming media and real-time application.
+
+## 3. Packet Switching
+
+- The internet is a packet switched network.
+- Message is broken into individual chunks called **packets.**
+- Each packet is sent individually.
+- Each packet will have **source and destination IP address** with sequence number.
+- Sequence numbers will help the receiver to
+  - Reorder the packets
+  - Detect missing packets and
+  - Send acknowledgement.
+
+### DataGram Approach
+
+- Datagram Packet Switching is also known as **connectionless switching.**
+- Each independent entity is called as datagram.
+- Datagrams contain destination information and the intermediary devices uses this information to forward datagrams to right destination.
+- In datagram packet switching approach , the path is not fixed.
+- Intermidiate nodes take the routing decisions to forward the packets.
+  ![datagram](../assets/datagram.svg)
+
+### Virtual Circuit Approach
+
+- vitual circuit switching is also known as coonection oriented switching.
+- In case of virtual circuit switching a preplaned route is established before message are sent.
+- Call request and call accept packets are used to establish the connection between sender and receiver.
+- In this approach , the path is fixed for the duration of a logical connection.
+
+![vortualSwitch](../assets/virtualSwitch.svg)
