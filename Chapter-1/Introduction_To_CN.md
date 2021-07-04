@@ -596,3 +596,78 @@ The pupose of OSI model is to show how to facilitate communication between diffe
 Shortcut : **P**lease **D**o **N**o**T** **S** **P** **A**
 
 ![OSI-REF](../assets/OSIREF.svg)
+
+## How Layers in OSI Model Works ?
+
+1. Application Layer
+
+   - lets say your application layers is generating some confidential data.and you want to send this information to another user like
+     > _my password is @@@@@@@@@@@@@@_
+
+2. Presentation layer
+   - presentation layer modifies the data and covrts it into some format and after conversion it is givent to session layer.
+     > asdfhbsajhvshdb\*?cxvnbx
+3. Session Layer
+
+   - Session layers carry this information to transport layer.
+
+4. Transport layer
+   - here transport layer information is added to the data.
+     > `TL INFO`--asdfhbsajhvshdb\*?cxvnbx
+   - Then forwarded to Network layer
+5. Network Layer
+
+   - Here data is added with Network layer informations
+     > `NL INFO`-- TL INFO--asdfhbsajhvshdb\*?cxvnbx
+   - Then forwarded to data link layer.
+
+6. Data Link Layer
+
+   - Here some data link information is also added to the original data.
+     > `DL INFO` -- NL INFO -- TL INFO -- asdfhbsajhvshdb\*?cxvnbx
+   - Now the data is forwarded to Physical layer
+
+7. Physical Layer
+   - Physical layer encode entire data into binary and sent it to the destination .
+   - Physical Layer Knows about the connected medium too.
+   - if connected medium is wired the signal will be sent.
+   - if connected medium is wireless the wave
+   - if connected medium is optical fiber then light.
+   - if connected medium is Ethernet cable then electric signal.
+   - sent info is like this
+     > 0100001000000001001001010101001001010100101010101010010100101001010
+
+## 1. Application Layer
+
+It enables the user to access the network resources.
+
+### Services Provided by Application Layer
+
+- File Transfer and Access Management(FTAM)
+- Mail Service
+- Directory Service
+
+## 2. Presentation Layer
+
+It is concerned with the **syntax and semantics** of the information exchange between two syatem.
+
+### Services Provided by Presentetatin layer
+
+- Translation -covertin data to commin format such that sender and receiver are at same page
+- Encryption - secure the information such that only sender and receiver can access the information
+- Compression - Reducing the number of bits of information so the information is of minimum size during the process
+
+## 3. Session Layer
+
+It establishes , maintains , and synchronizes the interaction among communicating devices.
+
+### Services Provided by Session Layer
+
+- Dialoge control - Session layer allows two system to enter in a dialog, dialog means it a communication between two system either in half or full duplex mode.
+- Synchronization
+
+## 4. Transport layer
+
+It is responsible for the process to process delivery of the entire maessage.
+
+### Se
